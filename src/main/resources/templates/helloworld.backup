@@ -3,12 +3,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>SpringVerse Thymeleaf</title>
+
+    <link rel="stylesheet" th:href="@{/css/thymeleaf.css}"/>
 </head>
 
 <body>
-Hello World of Spring!
-<br><br>
-Student name:<span th:text="${param.studentName}"/>
+<p th:text="'Time on the Server is '+${theDate}" class="funny"/>
 </body>
 
 </html>
